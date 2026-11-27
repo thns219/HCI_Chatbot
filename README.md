@@ -65,16 +65,34 @@ chatpot/
 
 ## 5. Kết Quả Đánh Giá (Benchmark)
 
-Trích từ [`supeo_results/supeo_results/tom_tat_diem.csv`](supeo_results/supeo_results/tom_tat_diem.csv) (ngày giả lập API `2026-10-28`, Gemini chế độ `fallback`):
+Đánh giá hệ thống trên **4 bộ kiểm thử A + B + C + D** (ngày giả lập API `2026-10-28`, chế độ `luật + regex` v5/v6):
 
-| Bộ kiểm thử | Chế độ | Số câu | Intent | Slot | Action | Nội dung | Đúng hết | Hội thoại đúng hết |
-| :--- | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **HELDOUT_CU (hồi quy)** | `luat+regex` | 28 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | **12/12** |
-| **A (DEV, hồi quy)** | `luat+regex` | 30 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | **6/6** |
-| **B (TEST, hồi quy)** | `luat+regex` | 30 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | **6/6** |
-| **HELDOUT_CU (hồi quy)** | `Gemini+luat` | 28 | 0.9643 | 1.0000 | 0.9643 | 1.0000 | 0.9643 | **12/12** |
-| **A (DEV, hồi quy)** | `Gemini+luat` | 30 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | **6/6** |
-| **B (TEST, hồi quy)** | `Gemini+luat` | 30 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | 1.0000 | **6/6** |
+### Tổng hợp theo từng bộ (A, B, C, D)
+
+| Bộ kiểm thử | Vai trò | Đơn lượt (Số câu / Đúng hết) | Đa lượt (Hội thoại / Đúng từng lượt) |
+| :--- | :--- | :---: | :---: |
+| **A (DEV)** | Hồi quy — tinh chỉnh | 30/30 (`100,00%`) | 6/6 (`100,00%` — 16/16 lượt) |
+| **B (TEST)** | Hồi quy — kiểm lỗi | 30/30 (`100,00%`) | 6/6 (`100,00%` — 17/17 lượt) |
+| **C (FRESH)** | Khách quan — chạy 1 lần | 24/24 (`100,00%`) | 5/5 (`100,00%` — 17/17 lượt) |
+| **D (HARD BLIND TEST)** | Kiểm thử thực tế nhiễu tự nhiên (không sửa code) | 27/30 (`90,00%`) | 5/6 (`83,33%` — 16/18 lượt) |
+
+### Chi tiết các chỉ số tổng hợp (A + B + C + D)
+
+- **Hội thoại Đơn lượt (Single-turn — Tổng 114 câu):**
+  - **Intent Accuracy:** `100,00%` (`114/114` câu)
+  - **Exact Slot Accuracy:** `97,37%` (`111/114` câu)
+  - **Action Accuracy:** `98,25%` (`112/114` câu)
+  - **Reply Accuracy:** `98,25%` (`112/114` câu)
+  - **All-4 Accuracy (Đúng hết 4 tiêu chí):**
+    - *Micro-average (theo tổng số câu):* `97,37%` (`111/114` câu)
+    - *Macro-average (trung bình 4 bộ):* `97,50%` (độ lệch chuẩn `5,00%`, trung vị `100,00%`, thấp nhất `90,00%` ở Bộ D, cao nhất `100,00%` ở Bộ A, B, C)
+- **Hội thoại Đa lượt & Ghi nhớ ngữ cảnh (Multi-turn — Tổng 23 cuộc hội thoại, 68 lượt):**
+  - **Turn-level Accuracy:** `97,06%` (`66/68` lượt); Macro-average 4 bộ đạt `97,22%` (độ lệch chuẩn `5,56%`, trung vị `100,00%`, từ `88,89%` đến `100,00%`)
+  - **Conversation-level Accuracy:** `95,65%` (`22/23` cuộc hội thoại); Macro-average 4 bộ đạt `95,83%` (độ lệch chuẩn `8,33%`, trung vị `100,00%`, từ `83,33%` đến `100,00%`)
+- **Gộp chung toàn bộ 4 bộ A + B + C + D (Đơn lượt + Đa lượt):**
+  - Trên tổng số **182 lượt truy vấn** (114 câu đơn + 68 lượt đa), hệ thống xử lý chính xác hoàn toàn **177/182 lượt**, đạt độ chính xác tổng thể **`97,25%`**.
+
+> *(Ngoài ra, kết quả lưu trữ thêm của bộ hồi quy `HELDOUT_CU` và chế độ `Gemini+luat` được giữ tại [`supeo_results/supeo_results/tom_tat_diem.csv`](supeo_results/supeo_results/tom_tat_diem.csv).)*
 
 ---
 
