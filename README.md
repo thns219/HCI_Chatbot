@@ -1,4 +1,4 @@
-# SUPEO Chatbot — Trợ Lý Tư Vấn Thời Trang Đa Lượt (HCI_Chatbot)
+#Chatbot — Trợ Lý Tư Vấn Thời Trang Đa Lượt (HCI_Chatbot)
 
 Chatbot tư vấn thời trang nữ theo kiến trúc **Task-Oriented Dialogue (TOD / SGP-TOD)**, kết hợp **Luật + Regex** và **Gemini (Fallback)** để hiểu ngữ cảnh đa lượt, truy xuất dữ liệu thực từ **FastAPI** và phản hồi chính xác tuyệt đối theo dữ liệu (không bịa số liệu).
 
