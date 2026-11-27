@@ -1,0 +1,25 @@
+﻿id,câu khách,intent_gt,intent_ok,slot_ok,action_ok,reply_ok,dự_đoán,kỳ_vọng,all_ok
+C01,Áo Blazer kẻ caro vintage có những size nào vậy,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo Blazer', 'ten_sp': 'Áo Blazer kẻ caro vintage'}","product_info/inform {'ten_sp': 'Áo Blazer kẻ caro vintage', 'loai_do': 'Áo Blazer'}",True
+C02,"Mình đang phân vân đầm ôm body cổ yếm, giá bao nhiêu thế",product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'ten_sp': 'Đầm ôm body cổ yếm'}","product_info/inform {'ten_sp': 'Đầm ôm body cổ yếm', 'loai_do': 'Đầm'}",True
+C03,quần ống suông cạp chun sau làm bằng vải gì,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'ten_sp': 'Quần ống suông cạp chun sau'}","product_info/inform {'ten_sp': 'Quần ống suông cạp chun sau', 'loai_do': 'Quần ống rộng'}",True
+C04,Chân váy đuôi cá còn hàng không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Chân váy Midi', 'ten_sp': 'Chân váy Midi đuôi cá'}","product_info/inform {'ten_sp': 'Chân váy Midi đuôi cá', 'loai_do': 'Chân váy Midi'}",True
+C05,Shop còn áo sơ mi hồng nhạt không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo sơ mi', 'tu_khoa': 'hồng nhạt', 'ten_sp': 'Áo sơ mi lụa tay phồng'}","product_info/inform {'loai_do': 'Áo sơ mi', 'tu_khoa': 'hồng nhạt', 'ten_sp': 'Áo sơ mi lụa tay phồng'}",True
+C06,Cho mình xem mấy cái quần ống rộng màu be,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'tu_khoa': 'be'}","product_info/inform {'loai_do': 'Quần ống rộng', 'tu_khoa': 'be'}",True
+C07,Đầm nào có chất liệu satin vậy,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'satin'}","product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'satin'}",True
+C08,Quần ống rộng lưng cao còn size XL không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'ten_sp': 'Quần ống rộng lưng cao'}","product_info/inform {'ten_sp': 'Quần ống rộng lưng cao', 'loai_do': 'Quần ống rộng'}",True
+C09,Chị cao 1m68 nặng 60kg mặc size nào ạ,size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 168, 'can_nang': 60}","size_advice/inform {'chieu_cao': 168, 'can_nang': 60}",True
+C10,"mình 52 ký, cao 1m55",size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 155, 'can_nang': 52}","size_advice/inform {'chieu_cao': 155, 'can_nang': 52}",True
+C11,"Cho mình hỏi size, mình cao 1m72",size_advice,True,True,True,True,size_advice/ask {'chieu_cao': 172},size_advice/ask {'chieu_cao': 172},True
+C12,Em cao 1m80 nặng 80kg đặt áo blazer dáng lửng size gì,size_advice,True,True,True,True,"size_advice/inform {'loai_do': 'Áo Blazer', 'ten_sp': 'Áo Blazer dáng lửng', 'chieu_cao': 180, 'can_nang': 80}","size_advice/inform {'chieu_cao': 180, 'can_nang': 80, 'ten_sp': 'Áo Blazer dáng lửng', 'loai_do': 'Áo Blazer'}",True
+C13,"Mai mình gặp đối tác làm ăn, nên mặc gì",lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Gặp đối tác'},lookbook/inform {'dip_mac': 'Gặp đối tác'},True
+C14,"Chiều nay mình đi uống trà chiều, phối đồ giúp mình",lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Trà chiều'},lookbook/inform {'dip_mac': 'Trà chiều'},True
+C15,Shop gợi ý set casual friday giúp mình,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Casual Friday'},lookbook/inform {'dip_mac': 'Casual Friday'},True
+C16,Cho mình hỏi đơn #SP3177 sao rồi,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP3177'},order_check/inform {'ma_don': '#SP3177'},True
+C17,đơn sp2740 của mình bị gì vậy,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP2740'},order_check/inform {'ma_don': '#SP2740'},True
+C18,Check hộ mình đơn #SP2650,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP2650'},order_check/inform {'ma_don': '#SP2650'},True
+C19,đơn #SP3220 đang đổi hàng đúng không,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP3220'},order_check/inform {'ma_don': '#SP3220'},True
+C20,Đơn 450k thì mình dùng được mã nào không?,voucher,True,True,True,True,voucher/inform {'cart_total': 450000},voucher/inform {'cart_total': 450000},True
+C21,Mã FLASHDEAL20 hôm nay còn dùng được không?,voucher,True,True,True,True,voucher/inform {'ma_voucher': 'FLASHDEAL20'},voucher/inform {'ma_voucher': 'FLASHDEAL20'},True
+C22,"mình có mã SUPEOBIRTHDAY, áp cho đơn 600k được không",voucher,True,True,True,True,"voucher/inform {'ma_voucher': 'SUPEOBIRTHDAY', 'cart_total': 600000}","voucher/inform {'ma_voucher': 'SUPEOBIRTHDAY', 'cart_total': 600000}",True
+C23,"Mình đang có 550k trong giỏ, dùng mã nào được nhỉ",voucher,True,True,True,True,voucher/inform {'cart_total': 550000},voucher/inform {'cart_total': 550000},True
+C24,Shop có nhận ship COD không?,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
