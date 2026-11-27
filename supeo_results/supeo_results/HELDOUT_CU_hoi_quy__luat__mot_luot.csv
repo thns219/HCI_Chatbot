@@ -1,0 +1,29 @@
+﻿id,câu khách,intent_gt,intent_ok,slot_ok,action_ok,reply_ok,dự_đoán,kỳ_vọng,all_ok
+H01,Cho mình hỏi áo sơ mi croptop cổ bẻ có những màu gì?,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo sơ mi', 'ten_sp': 'Áo sơ mi croptop cổ bẻ'}","product_info/inform {'ten_sp': 'Áo sơ mi croptop cổ bẻ', 'loai_do': 'Áo sơ mi'}",True
+H02,Đầm slip satin còn hàng không ạ?,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'ten_sp': 'Đầm slip satin'}","product_info/inform {'ten_sp': 'Đầm slip satin', 'loai_do': 'Đầm'}",True
+H03,Quần culottes bao nhiêu tiền vậy,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'ten_sp': 'Quần lửng culottes ống rộng'}","product_info/inform {'ten_sp': 'Quần lửng culottes ống rộng', 'loai_do': 'Quần ống rộng'}",True
+H04,Mình cần tìm chân váy màu đen,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Chân váy Midi', 'tu_khoa': 'đen'}","product_info/inform {'loai_do': 'Chân váy Midi', 'tu_khoa': 'đen'}",True
+H05,Có đầm nào chất voan không shop,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'voan'}","product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'voan'}",True
+H06,"Em cao 1m70, 60 ký thì mặc size nào?",size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 170, 'can_nang': 60}","size_advice/inform {'chieu_cao': 170, 'can_nang': 60}",True
+H07,Mình 1m58 nặng 47kg mặc đầm size gì nhỉ,size_advice,True,True,True,True,"size_advice/inform {'loai_do': 'Đầm', 'chieu_cao': 158, 'can_nang': 47}","size_advice/inform {'chieu_cao': 158, 'can_nang': 47, 'loai_do': 'Đầm'}",True
+H08,Cao 1m75 nặng 70kg,size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 175, 'can_nang': 70}","size_advice/inform {'chieu_cao': 175, 'can_nang': 70}",True
+H09,Tư vấn size giúp mình với,size_advice,True,True,True,True,size_advice/ask {},size_advice/ask {},True
+H10,Mai đi làm mặc gì cho lịch sự nhỉ?,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Công sở'},lookbook/inform {'dip_mac': 'Công sở'},True
+H11,"Cuối tuần này mình đi tiệc cocktail, nên mặc gì?",lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Tiệc cocktail'},lookbook/inform {'dip_mac': 'Tiệc cocktail'},True
+H12,Gợi ý cho mình bộ đồ đi du lịch biển,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Du lịch hè'},lookbook/inform {'dip_mac': 'Du lịch hè'},True
+H13,Đi hẹn hò thơ mộng thì phối sao shop,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Hẹn hò thơ mộng'},lookbook/inform {'dip_mac': 'Hẹn hò thơ mộng'},True
+H14,Phối đồ giúp mình với,lookbook,True,True,True,True,lookbook/ask {},lookbook/ask {},True
+H15,Đơn #SP3150 đến đâu rồi bạn,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP3150'},order_check/inform {'ma_don': '#SP3150'},True
+H16,tra giúp mình đơn sp3255,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP3255'},order_check/inform {'ma_don': '#SP3255'},True
+H17,Đơn hàng của mình giao tới đâu rồi?,order_check,True,True,True,True,order_check/ask {},order_check/ask {},True
+H18,#SP1234 có không shop,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP1234'},order_check/inform {'ma_don': '#SP1234'},True
+H19,"Giỏ hàng của mình 1tr2, dùng mã nào được?",voucher,True,True,True,True,voucher/inform {'cart_total': 1200000},voucher/inform {'cart_total': 1200000},True
+H20,Mã SUPEOAUTUMN còn dùng được không?,voucher,True,True,True,True,voucher/inform {'ma_voucher': 'SUPEOAUTUMN'},voucher/inform {'ma_voucher': 'SUPEOAUTUMN'},True
+H21,"Mình có mã WELCOME10, đơn 300k dùng được không?",voucher,True,True,True,True,"voucher/inform {'ma_voucher': 'WELCOME10', 'cart_total': 300000}","voucher/inform {'ma_voucher': 'WELCOME10', 'cart_total': 300000}",True
+H22,Còn mã freeship nào không?,voucher,True,True,True,True,voucher/inform {},voucher/inform {},True
+H23,Mã SUMMER2026 dùng được chưa,voucher,True,True,True,True,voucher/inform {'ma_voucher': 'SUMMER2026'},voucher/inform {'ma_voucher': 'SUMMER2026'},True
+H24,Shop có đổi trả không?,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+H25,Chào shop nhé,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+H26,"Ok cảm ơn bạn, mình hiểu rồi",chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+H27,Shop ở đâu vậy?,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+H28,Bạn có bán giày không?,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True

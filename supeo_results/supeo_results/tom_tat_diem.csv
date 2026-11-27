@@ -1,0 +1,7 @@
+﻿bo,che_do,so_cau,intent,slot,action,noi_dung,dung_het,so_luot,dung_tung_luot,hoi_thoai_dung_het
+HELDOUT_CU (hồi quy),luat+regex,28,1.0,1.0,1.0,1.0,1.0,28,1.0,12/12
+"A (DEV, hồi quy)",luat+regex,30,1.0,1.0,1.0,1.0,1.0,16,1.0,6/6
+"B (TEST, hồi quy)",luat+regex,30,1.0,1.0,1.0,1.0,1.0,17,1.0,6/6
+HELDOUT_CU (hồi quy),Gemini+luat,28,0.9643,1.0,0.9643,1.0,0.9643,28,1.0,12/12
+"A (DEV, hồi quy)",Gemini+luat,30,1.0,1.0,1.0,1.0,1.0,16,1.0,6/6
+"B (TEST, hồi quy)",Gemini+luat,30,1.0,1.0,1.0,1.0,1.0,17,1.0,6/6

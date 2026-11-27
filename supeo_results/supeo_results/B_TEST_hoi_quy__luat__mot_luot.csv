@@ -1,0 +1,31 @@
+﻿id,câu khách,intent_gt,intent_ok,slot_ok,action_ok,reply_ok,dự_đoán,kỳ_vọng,all_ok
+B01,Áo blazer cộc tay bán bao nhiêu vậy shop,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo Blazer', 'ten_sp': 'Áo Blazer cộc tay vạt chéo'}","product_info/inform {'ten_sp': 'Áo Blazer cộc tay vạt chéo', 'loai_do': 'Áo Blazer'}",True
+B02,chữ A dập ly có size nào,product_info,True,True,True,True,"product_info/inform {'ten_sp': 'Chân váy Midi chữ A dập ly', 'loai_do': 'Chân váy Midi'}","product_info/inform {'ten_sp': 'Chân váy Midi chữ A dập ly', 'loai_do': 'Chân váy Midi'}",True
+B03,áo sơ mi cổ đức còn hàng không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo sơ mi', 'ten_sp': 'Áo sơ mi trắng cổ đức'}","product_info/inform {'ten_sp': 'Áo sơ mi trắng cổ đức', 'loai_do': 'Áo sơ mi'}",True
+B04,đầm champagne giá sao shop,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'champagne', 'ten_sp': 'Đầm slip satin'}","product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'champagne', 'ten_sp': 'Đầm slip satin'}",True
+B05,Quần culottes còn size M không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'ten_sp': 'Quần lửng culottes ống rộng'}","product_info/inform {'ten_sp': 'Quần lửng culottes ống rộng', 'loai_do': 'Quần ống rộng'}",True
+B06,Cho mình xem chân váy xếp ly,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Chân váy Midi', 'ten_sp': 'Chân váy Midi xếp ly'}","product_info/inform {'ten_sp': 'Chân váy Midi xếp ly', 'loai_do': 'Chân váy Midi'}",True
+B07,Có áo sơ mi trắng không shop,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo sơ mi', 'tu_khoa': 'trắng'}","product_info/inform {'loai_do': 'Áo sơ mi', 'tu_khoa': 'trắng'}",True
+B08,đầm kem có không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'kem', 'ten_sp': 'Đầm midi cổ vuông'}","product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'kem', 'ten_sp': 'Đầm midi cổ vuông'}",True
+B09,Quần lưng cao chất liệu gì vậy,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'ten_sp': 'Quần ống rộng lưng cao'}","product_info/inform {'ten_sp': 'Quần ống rộng lưng cao', 'loai_do': 'Quần ống rộng'}",True
+B10,Size nào hợp với mình nhỉ,size_advice,True,True,True,True,size_advice/ask {},size_advice/ask {},True
+B11,"Mình mặc size nào nhỉ, cao 1m64 55kg",size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 164, 'can_nang': 55}","size_advice/inform {'chieu_cao': 164, 'can_nang': 55}",True
+B12,"Cao 1m70, 70 cân thì size gì",size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 170, 'can_nang': 70}","size_advice/inform {'chieu_cao': 170, 'can_nang': 70}",True
+B13,mình 1m60 mà nặng 62kg,size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 160, 'can_nang': 62}","size_advice/inform {'chieu_cao': 160, 'can_nang': 62}",True
+B14,"Cuối tuần đi cocktail party, phối đồ sao nhỉ",lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Tiệc cocktail'},lookbook/inform {'dip_mac': 'Tiệc cocktail'},True
+B15,Mình muốn bộ đồ đi du lịch mùa hè,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Du lịch hè'},lookbook/inform {'dip_mac': 'Du lịch hè'},True
+B16,Cuối tuần đi dạo phố nên mặc gì,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Dạo phố'},lookbook/inform {'dip_mac': 'Dạo phố'},True
+B17,Cho mình biết đơn #SP2890 đã giao chưa,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP2890'},order_check/inform {'ma_don': '#SP2890'},True
+B18,đơn sp3201 đi tới đâu rồi,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP3201'},order_check/inform {'ma_don': '#SP3201'},True
+B19,Đơn hàng #SP3260 chưa bàn giao à,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP3260'},order_check/inform {'ma_don': '#SP3260'},True
+B20,Có 2 triệu thì được giảm bao nhiêu,voucher,True,True,True,True,voucher/inform {'cart_total': 2000000},voucher/inform {'cart_total': 2000000},True
+B21,Mã FREESHIPMAX áp cho đơn 700k được không,voucher,True,True,True,True,"voucher/inform {'ma_voucher': 'FREESHIPMAX', 'cart_total': 700000}","voucher/inform {'ma_voucher': 'FREESHIPMAX', 'cart_total': 700000}",True
+B22,mã SUPEOVIP100 còn hạn không,voucher,True,True,True,True,voucher/inform {'ma_voucher': 'SUPEOVIP100'},voucher/inform {'ma_voucher': 'SUPEOVIP100'},True
+B23,Có mã FLASHDEAL20 áp cho đơn 500k không,voucher,True,True,True,True,"voucher/inform {'ma_voucher': 'FLASHDEAL20', 'cart_total': 500000}","voucher/inform {'ma_voucher': 'FLASHDEAL20', 'cart_total': 500000}",True
+B24,Bên mình có chi nhánh ở Hà Nội không?,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+B25,Mình muốn đổi trả áo thì làm sao,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+B26,Tạm biệt shop nhé,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+B27,Quần ống rộng xếp ly đôi có màu gì,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'ten_sp': 'Quần ống rộng xếp ly đôi'}","product_info/inform {'ten_sp': 'Quần ống rộng xếp ly đôi', 'loai_do': 'Quần ống rộng'}",True
+B28,Đầm babydoll còn hàng không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'ten_sp': 'Đầm babydoll hoa nhí'}","product_info/inform {'ten_sp': 'Đầm babydoll hoa nhí', 'loai_do': 'Đầm'}",True
+B29,Mình cao 1m58 mặc đầm size gì,size_advice,True,True,True,True,"size_advice/ask {'loai_do': 'Đầm', 'chieu_cao': 158}","size_advice/ask {'chieu_cao': 158, 'loai_do': 'Đầm'}",True
+B30,Đơn #SP3150 của mình bao giờ giao,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP3150'},order_check/inform {'ma_don': '#SP3150'},True

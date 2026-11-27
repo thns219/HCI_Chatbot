@@ -1,0 +1,8 @@
+{
+  "thoi_gian_xuat": "2026-11-17 09:44:28",
+  "ngay_api_khi_do": "2026-10-28",
+  "gemini_dang_bat": true,
+  "gemini_model": "gemini-3.5-flash-lite",
+  "dst_gemini": "fallback",
+  "nlg_gemini": false
+}

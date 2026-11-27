@@ -1,0 +1,31 @@
+﻿id,câu khách,intent_gt,intent_ok,slot_ok,action_ok,reply_ok,dự_đoán,kỳ_vọng,all_ok
+A01,Blazer dáng lửng còn hàng không shop,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo Blazer', 'ten_sp': 'Áo Blazer dáng lửng'}","product_info/inform {'ten_sp': 'Áo Blazer dáng lửng', 'loai_do': 'Áo Blazer'}",True
+A02,Đầm sơ mi thắt đai eo có những màu nào,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'ten_sp': 'Đầm sơ mi thắt đai eo'}","product_info/inform {'ten_sp': 'Đầm sơ mi thắt đai eo', 'loai_do': 'Đầm'}",True
+A03,chân váy xòe xếp tầng bao nhiêu thế,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Chân váy Midi', 'ten_sp': 'Chân váy Midi xòe xếp tầng'}","product_info/inform {'ten_sp': 'Chân váy Midi xòe xếp tầng', 'loai_do': 'Chân váy Midi'}",True
+A04,Có áo blazer nào màu xám không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo Blazer', 'tu_khoa': 'xám'}","product_info/inform {'loai_do': 'Áo Blazer', 'tu_khoa': 'xám'}",True
+A05,tìm giúp mình quần màu nâu mocha,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'tu_khoa': 'nâu mocha', 'ten_sp': 'Quần ống rộng xếp ly đôi'}","product_info/inform {'loai_do': 'Quần ống rộng', 'tu_khoa': 'nâu mocha', 'ten_sp': 'Quần ống rộng xếp ly đôi'}",True
+A06,Quần suông công sở có những size nào ạ,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Quần ống rộng', 'ten_sp': 'Quần suông công sở'}","product_info/inform {'ten_sp': 'Quần suông công sở', 'loai_do': 'Quần ống rộng'}",True
+A07,Áo Blazer tay lỡ một khuy giá sao shop,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo Blazer', 'ten_sp': 'Áo Blazer tay lỡ một khuy'}","product_info/inform {'ten_sp': 'Áo Blazer tay lỡ một khuy', 'loai_do': 'Áo Blazer'}",True
+A08,Đầm ôm body còn size S không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'ten_sp': 'Đầm ôm body cổ yếm'}","product_info/inform {'ten_sp': 'Đầm ôm body cổ yếm', 'loai_do': 'Đầm'}",True
+A09,Có váy nào màu champagne không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'champagne', 'ten_sp': 'Đầm slip satin'}","product_info/inform {'loai_do': 'Đầm', 'tu_khoa': 'champagne', 'ten_sp': 'Đầm slip satin'}",True
+A10,"Mình cao 1m63 nặng 54kg, mặc size gì nhỉ",size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 163, 'can_nang': 54}","size_advice/inform {'chieu_cao': 163, 'can_nang': 54}",True
+A11,"cao 1m66, 62kg",size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 166, 'can_nang': 62}","size_advice/inform {'chieu_cao': 166, 'can_nang': 62}",True
+A12,Em 1m52 42 ký thì size gì,size_advice,True,True,True,True,"size_advice/inform {'chieu_cao': 152, 'can_nang': 42}","size_advice/inform {'chieu_cao': 152, 'can_nang': 42}",True
+A13,"Tư vấn giúp mình size đầm với, mình nặng 58kg",size_advice,True,True,True,True,"size_advice/ask {'loai_do': 'Đầm', 'can_nang': 58}","size_advice/ask {'can_nang': 58, 'loai_do': 'Đầm'}",True
+A14,Mình cao 1m77 nặng 66kg thì lấy áo sơ mi croptop cổ bẻ size gì,size_advice,True,True,True,True,"size_advice/inform {'loai_do': 'Áo sơ mi', 'ten_sp': 'Áo sơ mi croptop cổ bẻ', 'chieu_cao': 177, 'can_nang': 66}","size_advice/inform {'chieu_cao': 177, 'can_nang': 66, 'ten_sp': 'Áo sơ mi croptop cổ bẻ', 'loai_do': 'Áo sơ mi'}",True
+A15,Đi hẹn hò tối nay mặc gì cho xinh,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Hẹn hò'},lookbook/inform {'dip_mac': 'Hẹn hò'},True
+A16,Gợi ý đồ đi dự tiệc ngoài trời,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Dự tiệc ngoài trời'},lookbook/inform {'dip_mac': 'Dự tiệc ngoài trời'},True
+A17,Dạo phố mùa thu mặc gì cho hợp,lookbook,True,True,True,True,lookbook/inform {'dip_mac': 'Dạo phố mùa thu'},lookbook/inform {'dip_mac': 'Dạo phố mùa thu'},True
+A18,Đơn #SP2908 giao tới đâu rồi,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP2908'},order_check/inform {'ma_don': '#SP2908'},True
+A19,tra đơn sp3215 giúp mình,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP3215'},order_check/inform {'ma_don': '#SP3215'},True
+A20,Đơn #SP9999 sao rồi,order_check,True,True,True,True,order_check/inform {'ma_don': '#SP9999'},order_check/inform {'ma_don': '#SP9999'},True
+A21,Mã SUPEOVIP100 dùng cho đơn 300k được không,voucher,True,True,True,True,"voucher/inform {'ma_voucher': 'SUPEOVIP100', 'cart_total': 300000}","voucher/inform {'ma_voucher': 'SUPEOVIP100', 'cart_total': 300000}",True
+A22,Hiện có những mã giảm giá nào vậy shop,voucher,True,True,True,True,voucher/inform {},voucher/inform {},True
+A23,Mình mua 1tr5 thì áp mã nào được,voucher,True,True,True,True,voucher/inform {'cart_total': 1500000},voucher/inform {'cart_total': 1500000},True
+A24,"Mình có mã SUPEOSHIP30, xài được không?",voucher,True,True,True,True,voucher/inform {'ma_voucher': 'SUPEOSHIP30'},voucher/inform {'ma_voucher': 'SUPEOSHIP30'},True
+A25,Cho mình hỏi bên shop có bảo hành không?,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+A26,Hello shop ơi,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+A27,Thanks shop nhiều nha,chitchat,True,True,True,True,chitchat/chitchat {},chitchat/chitchat {},True
+A28,Áo sơ mi kẻ sọc dáng rộng còn hàng không,product_info,True,True,True,True,"product_info/inform {'loai_do': 'Áo sơ mi', 'ten_sp': 'Áo sơ mi kẻ sọc dáng rộng'}","product_info/inform {'ten_sp': 'Áo sơ mi kẻ sọc dáng rộng', 'loai_do': 'Áo sơ mi'}",True
+A29,Đơn 700k dùng mã SUPEOAUTUMN được không,voucher,True,True,True,True,"voucher/inform {'ma_voucher': 'SUPEOAUTUMN', 'cart_total': 700000}","voucher/inform {'ma_voucher': 'SUPEOAUTUMN', 'cart_total': 700000}",True
+A30,Đầm voan hoa tay tiên mặc size nào vậy,size_advice,True,True,True,True,"size_advice/ask {'loai_do': 'Đầm', 'ten_sp': 'Đầm voan hoa tay tiên'}","size_advice/ask {'ten_sp': 'Đầm voan hoa tay tiên', 'loai_do': 'Đầm'}",True
